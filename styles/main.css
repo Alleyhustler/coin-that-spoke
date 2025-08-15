@@ -1,0 +1,223 @@
+@media only screen and (min-width: 900px) {
+
+body {
+     background-color: white;
+     color:black;
+     font-family: 'courier';
+     font-weight: 700;
+     font-size: 1.2rem;
+}
+
+@font-face { 
+    font-family: 'portfolio';
+    src: url('../fonts/portfolio.ttf') format('truetype'); /*this font is made by me! feel free to use it :P it doesnt have all characters tho*/
+    font-weight: normal;
+    font-style: normal;
+} 
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+ ::selection {
+     background-color: black;
+     color:white;
+}
+
+h1, h2, h3 { margin:0; font-family:"portfolio";}
+h1 {margin-top:15px;
+    font-size:3.5rem;
+    text-align:center;
+}
+h2 {
+    font-size:2em;
+    text-align:left;}
+h1 a { color:black;}
+a {
+    color:red;
+     text-decoration:none;
+}
+a:hover {
+     text-decoration:underline;
+transition: all 0.3s ease;
+}
+.inactive { 
+  text-decoration:line-through;
+  color:black;
+  }
+.inactive:hover { 
+  text-decoration:line-through;
+  color:black;
+  }
+            b, i { color: red}
+ main {
+     flex: 1;
+     margin:auto;
+     order: 2;
+     width:50%;
+     height: auto;
+}
+ #container {
+     max-width: 1200px;
+     margin: 0 auto;
+     min-height:100%;
+}
+ #flex {
+     display: flex;
+}
+ #header, #headerarea {
+     margin-top: 15px;
+     margin-bottom: 15px;
+     display:block;
+     position: absolute;
+     width:200px;
+     margin-left: 15px;
+}
+.box {
+    border: 2px dashed black;
+    width:auto;
+    height:auto;
+    padding:15px;
+    margin:5px;
+}
+
+ .post {
+     margin: auto;
+     display:block;
+     text-align:left;
+     width:70%;
+     max-height:500px;
+     overflow-y: scroll;
+     overflow-x: hidden;
+}
+ .post .p, .indents {
+     color:black;
+     overflow-y: scroll;
+     max-width:450px;
+     text-align:left;
+     padding-left:15px;
+     margin-top: 50px;
+}
+ .post img {
+     float:left;
+     margin-right:5px;
+     margin-bottom: 10px; display: inline-block;
+}
+
+    .p { height:220px; overflow-y:scroll; display: inline-block;}
+ .post .image {
+     float:left;
+     margin:auto;
+}
+ .post h1, .title {
+     text-transform: uppercase;
+     letter-spacing: 1px;
+}
+
+ .post2 {
+     margin: auto;
+     overflow:hidden;
+     display:block;
+     text-align:right;
+     width:60%;
+     max-height:500px;
+     padding-left:15px;
+     overflow-y: scroll;
+}
+ .post2 p, .indents {
+     color:black;
+     float:left;
+     width:450px;
+     text-align:left;
+     padding-left:15px;
+     margin-top: 50px;
+}
+ .post2 img {
+     float:right;
+     margin-right:5px;
+     margin-bottom: 10px;
+}
+ .post2 .image {
+     float:right;
+     margin:auto;
+}
+ .indents {
+     text-align: left;
+     font-size: 15px;
+     border-left-style: dotted;
+     border-left-color: #000;
+     height: auto;
+     padding: 10px;
+     margin-left: 18px;
+     margin-bottom: 8px;
+     margin-top: 8px;
+}
+/* navigation section!! */
+ #navbar {
+     height: 40px;
+     width: 100%;
+     overflow: hidden;
+     bottom: 0;
+     margin-bottom:50px;
+}
+ #navbar ul {
+     display: flex;
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+     justify-content: space-evenly;
+}
+ table {
+     margin: auto;
+     margin-top: 5%;
+}
+ td {
+     width: 300px;
+     padding:0;
+     margin:auto;
+}
+ figure {
+     display:inline-block;
+}
+ figcaption {
+     font-size:13px;
+     max-width:150px;
+}
+}

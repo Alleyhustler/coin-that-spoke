@@ -1,0 +1,219 @@
+@media only screen and (max-width: 900px) {
+body {
+     background-color: white;
+     color:black;
+     font-family: 'courier';
+     font-weight: 700;
+     font-size: 1em;
+}
+
+ ::selection {
+     background-color: black;
+     color:white;
+}
+
+h1, h2, h3 { margin:0;font-family:'courier'}
+h1 {margin-top:5%;
+    font-size:2.5em;
+    text-align:center;
+}
+h2 {
+    font-size:2em;
+    text-align:left;}
+h1 a { color:black;}
+a {
+    color:red;
+     text-decoration:none;
+}
+a:hover {
+     text-decoration:underline;
+transition: all 0.3s ease;
+}
+.inactive { 
+  text-decoration:line-through;
+  color:black;
+  }
+.inactive:hover { 
+  text-decoration:line-through;
+  color:black;
+  }
+            b, i { color: red}
+ main {
+     flex: 1;
+     margin:auto;
+     order: 2;
+     width:80%;
+     height: auto;
+}
+ #container {
+     max-width: 100%;
+     margin: 0 auto;
+     min-height:100%;
+}
+ #flex {
+     display: flex;
+         flex-wrap: wrap;
+}
+ #header, #headerarea {
+     margin-top: 15px;
+     margin-bottom: 15px;
+     display:block;
+     position: absolute;
+     width:200px;
+     margin-left: 15px;
+}
+.box {
+    border: 2px dashed black;
+    width:auto;
+    height:auto;
+    padding:15px;
+    margin:5px;
+}
+
+ .post {
+     margin: auto;
+     display:block;
+     text-align:left;
+     width:70%;
+     max-height:70%;
+     padding-left:10px;
+     padding-top:1px;
+     overflow-y: scroll;
+     overflow-x: hidden;
+}
+ .post .p, .indents {
+     color:black;
+     overflow-y: scroll;
+     max-width:60%;
+     text-align:left;
+     padding-left:15px;
+     order: 2;
+     float:none;
+}
+ .post img {
+     float:left;
+     margin-right:5px;
+     margin-bottom: 10px; 
+     display: inline-block;
+     order: 1;
+     float:none;
+}
+
+    .p { height:20%; overflow-y:scroll; display: inline-block;}
+ .post .image {
+     float:left;
+     margin:auto;
+}
+ .post h1, .title {
+     text-transform: uppercase;
+     letter-spacing: 1px;
+}
+
+ .post2 {
+     margin: auto;
+     overflow-x:hidden;
+     display:block;
+     text-align:right;
+     width:70%;
+     max-height:70%;
+     padding-left:15px;
+     overflow-y: scroll;
+}
+ .post2 p, .indents {
+     color:black;
+     float:left;
+     max-width:60%;
+     text-align:left;
+     padding-left:15px;
+     margin-top: 50px;
+}
+ .post2 img {
+     float:right;
+     margin-right:5px;
+     margin-bottom: 10px;
+}
+ .post2 .image {
+     float:right;
+     margin:auto;
+}
+ .indents {
+     text-align: left;
+     font-size: 15px;
+     border-left-style:dotted;
+     border-left-color: #000;
+     height: auto;
+     padding: 10px;
+     margin-left: 18px;
+     margin-bottom: 8px;
+     margin-top: 8px;
+}
+ figure {
+     display:inline-block;
+}
+ figcaption {
+     font-size:13px;
+     max-width:80%;
+}
+
+
+#leftSidebar {
+    order: 1;
+}
+#rightSidebar {
+    order: 3;
+}
+    
+/* navigation section!! */
+ #navbar {
+     height: 40px;
+     width: 100%;
+     overflow: hidden;
+     bottom: 0;
+     margin-bottom:50px;
+}
+ #navbar ul {
+     display: flex;
+         flex-wrap: wrap;
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+     justify-content: space-evenly;
+}
+    /* below code found on stackoverflow!*/
+    /* Force table to not be like tables anymore */
+     table, thead, tbody, th, td, tr {
+         display: block;
+    }
+    /* Hide table headers (but not display: none;
+    , for accessibility) */
+     thead tr {
+         position: absolute;
+         top: -9999px;
+         left: -9999px;
+    }
+     tr {
+         margin: 0 0 1rem 0;
+    }
+     td {
+        /* Behave like a "row" */
+         border: none;
+         position: relative;
+         width: 30%;
+         padding:0;
+         margin:auto;
+    }
+     td:before {
+        /* Now like a table header */
+         position: absolute;
+        /* Top/left values mimic padding */
+         top: 0;
+         left: 6px;
+         width: 45%;
+         padding-right: 10px;
+         white-space: nowrap;
+    }    
+     table {
+         margin: auto;
+         margin-top: 5%;
+    }
+}
